@@ -1,7 +1,12 @@
 body {
-  background-color: #164a41;
-  width: 800px;
+  background-color: rgb(31, 24, 24);
+}
+.entirety {
+  background-color: gray;
+  width: 900px;
   height: 600px;
+  margin-left: 200px;
+  margin-top: -21px;
 }
 hr {
   height: 1px;
@@ -17,36 +22,47 @@ nav {
   margin-top: -60px;
   margin-right: 50px;
 }
-
+/**styling of container carrying the image**/
 .image {
-  background-color: #164a41;
+  background-color: gray;
   margin-left: 20px;
 }
+.about-title {
+  text-align: center;
+}
+
+/**styling about container**/
 .about {
-  border-radius: 25px;
   float: right;
   width: 500px;
-  height: 500px;
-  margin-right: -30px;
+  height: 550px;
   margin-top: -310px;
-  background-color: #4d774e;
+  background-color: gray;
 }
+/**styling more-about container**/
 .more-about {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }
-footer {
-  background-color: #164a41;
-  height: 100px;
-  width: 1200px;
-  margin-top: 200px;
-  width: 1340px;
+.more-one-me {
+  padding-top: 50px;
+  padding-left: 10px;
 }
+
+/**styling of the footer**/
+footer {
+  background-color: gray;
+  height: 100px;
+  margin-top: 230px;
+  width: 900px;
+}
+/**styling of paragraphs**/
 
 p {
   font-size: large;
   font-family: Arial, Helvetica, sans-serif;
 }
+/**The following handles styling of the Links(a tags)**/
 a:link {
   color: #f1b24a;
 }
