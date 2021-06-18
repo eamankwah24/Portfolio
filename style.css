@@ -4,7 +4,7 @@ body {
 .entirety {
   background-color: gray;
   width: 900px;
-  height: 600px;
+  height: 700px;
   margin-left: 200px;
   margin-top: -21px;
 }
@@ -22,6 +22,7 @@ nav {
   margin-top: -60px;
   margin-right: 50px;
 }
+
 /**styling of container carrying the image**/
 .image {
   background-color: gray;
@@ -46,14 +47,14 @@ nav {
 }
 .more-one-me {
   padding-top: 50px;
-  padding-left: 10px;
+  padding-left: 2em;
 }
 
 /**styling of the footer**/
 footer {
   background-color: gray;
   height: 100px;
-  margin-top: 230px;
+  margin-top: 310px;
   width: 900px;
 }
 /**styling of paragraphs**/
@@ -64,7 +65,7 @@ p {
 }
 /**The following handles styling of the Links(a tags)**/
 a:link {
-  color: #f1b24a;
+  color: black;
 }
 a:visited {
   color: black;
