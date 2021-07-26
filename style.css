@@ -17,10 +17,16 @@ header {
   margin-top: -5px;
   margin-bottom: -15px;
 }
-nav {
+.navigate {
   float: right;
   margin-top: -60px;
   margin-right: 50px;
+}
+.navigate a{
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  font-size: 17px;
 }
 
 /**styling of container carrying the image**/
