@@ -3,16 +3,24 @@ const {readFileSync}=require('fs');
 
 //get all files
 const homePage=readFileSync('./index.html')
+const contactPage=readFileSync('./contact.html')
 const homeStyle=readFileSync('./style.css')
 const homeImage=readFileSync('./images/IMG_E1067.JPG')
+const instaImg=readFileSync('./images/insta3.png')
 
 const server=http.createServer((req,res)=>{
   const url=req.url;
     //returning home page
-  if (url==='/'){
+  if ((url==='/') || (url==='/index.html')){
     res.writeHead(200,{'content-type':'text/html'})
     res.write(homePage)
     res.end()      
+  }
+  //returns contact page
+  else if(url==='/contact.html'){
+      res.writeHead(200,{'content-type':'text/html'})
+      res.write(contactPage)
+      res.end()
   }
   //returns styles sheet to browser
   else if(url==='/style.css'){
@@ -25,6 +33,12 @@ const server=http.createServer((req,res)=>{
     res.writeHead(200,{'content-type':'image/jpg'})
     res.write(homeImage)
     res.end()
+  }
+  //returns instagram icon
+  else if(url==='/images/insta3.png'){
+    res.writeHead(200,{'content-type':'image/png'})
+    res.write(instaImg)
+    res.end
   }
   //404 if url is not found
   else{
