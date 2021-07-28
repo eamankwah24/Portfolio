@@ -1,51 +1,30 @@
-const http=require('http')
-const {readFileSync}=require('fs');
+//rewriting server using express
+const express=require('express')
+const app=express()
+const path=require('path')
 
-//get all files
-const homePage=readFileSync('./index.html')
-const contactPage=readFileSync('./contact.html')
-const homeStyle=readFileSync('./style.css')
-const homeImage=readFileSync('./images/IMG_E1067.JPG')
-const instaImg=readFileSync('./images/insta3.png')
+app.use(express.static('./public'))
 
-const server=http.createServer((req,res)=>{
-  const url=req.url;
-    //returning home page
-  if ((url==='/') || (url==='/index.html')){
-    res.writeHead(200,{'content-type':'text/html'})
-    res.write(homePage)
-    res.end()      
-  }
-  //returns contact page
-  else if(url==='/contact.html'){
-      res.writeHead(200,{'content-type':'text/html'})
-      res.write(contactPage)
-      res.end()
-  }
-  //returns styles sheet to browser
-  else if(url==='/style.css'){
-    res.writeHead(200,{'content-type':'text/css'})
-    res.write(homeStyle)
-    res.end() 
-  }
-  //returns image to browser
-  else if(url==='/images/IMG_E1067.JPG'){
-    res.writeHead(200,{'content-type':'image/jpg'})
-    res.write(homeImage)
-    res.end()
-  }
-  //returns instagram icon
-  else if(url==='/images/insta3.png'){
-    res.writeHead(200,{'content-type':'image/png'})
-    res.write(instaImg)
-    res.end
-  }
-  //404 if url is not found
-  else{
-    res.writeHead(404,{'content-type':'text/html'})
-    res.write('<h1>page not found</h1>')
-    res.end()
-  }
+//get request for homepage and return homepage
+app.get('/',(req,res)=>{
+  res.status(200).sendFile(path.resolve(__dirname,'./index.html'))
+
 })
 
-server.listen(5000)
+//handle 404
+app.all('*',(req,res)=>{
+  res.status(404).send('<h1>Resource not found</h1>')
+})
+
+
+
+app.listen(5000,()=>{
+  console.log(`server is listening on port 5000`);
+}) 
+//app.get
+//app.post
+//app.put
+//app.delete
+//app.all
+//app.use
+//app.listen
