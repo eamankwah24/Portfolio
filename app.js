@@ -3,13 +3,26 @@ const express=require('express')
 const app=express()
 const path=require('path')
 
-app.use(express.static('./public'))
+//set up static and middleware
+app.use(express.static('public'))
+
 
 //get request for homepage and return homepage
 app.get('/',(req,res)=>{
   res.status(200).sendFile(path.resolve(__dirname,'./index.html'))
 
 })
+
+app.get('/index.html',(req,res)=>{
+  res.status(200).sendFile(path.resolve(__dirname,'./index.html'))
+
+})
+
+app.get('/contact.html',(req,res)=>{
+  res.status(200).sendFile(path.resolve(__dirname,'./contact.html'))
+
+})
+
 
 //handle 404
 app.all('*',(req,res)=>{

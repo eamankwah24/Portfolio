@@ -1,84 +1,50 @@
 body {
-  background-color: rgb(31, 24, 24);
+  background-color: #202020;
 }
-.entirety {
-  background-color: gray;
-  width: 900px;
-  height: 700px;
-  margin-left: 200px;
-  margin-top: -21px;
-}
-hr {
-  height: 1px;
-  background-color: #f1b24a;
+.content_holder {
+  background-color: #000000;
+  height: 820px;
+  width: 700px;
+  margin-left: 300px;
 }
 
-header {
-  margin-top: -5px;
-  margin-bottom: -15px;
+.profile_picture {
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 250px;
+  width: 22%;
 }
-.navigate {
-  float: right;
-  margin-top: -60px;
-  margin-right: 50px;
-}
-.navigate a{
-  float: left;
-  display: block;
-  padding: 14px 16px;
-  font-size: 17px;
+.name {
+  color: white;
 }
 
-/**styling of container carrying the image**/
-.image {
-  background-color: gray;
-  margin-left: 20px;
-}
-.about-title {
-  text-align: center;
-}
-
-/**styling about container**/
-.about {
-  float: right;
-  width: 500px;
-  height: 550px;
-  margin-top: -310px;
-  background-color: gray;
-}
-/**styling more-about container**/
-.more-about {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-}
-.more-one-me {
-  padding-top: 50px;
-  padding-left: 2em;
+p.solid {
+  border-style: solid;
+  border-color: white;
+  border-width: medium;
+  border-right: 1px;
+  border-left: 1px;
 }
 
-/**styling of the footer**/
-footer {
-  background-color: gray;
-  height: 100px;
-  margin-top: 310px;
-  width: 900px;
+.aboutMe_link {
 }
-/**styling of paragraphs**/
 
-p {
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/**The following handles styling of the Links(a tags)**/
+/* unvisited link */
 a:link {
-  color: black;
+  color: white;
 }
+
+/* visited link */
 a:visited {
-  color: black;
+  color: yellow;
 }
+
+/* mouse over link */
 a:hover {
-  color: #f1b24a;
+  color: yellow;
 }
+
+/* selected link */
 a:active {
   color: blue;
 }
