@@ -14,6 +14,12 @@ body {
   margin-left: 250px;
   width: 22%;
 }
+
+.instaLogo {
+  border-radius: 50%;
+  width: 10%;
+}
+
 .name {
   color: white;
 }
@@ -21,13 +27,13 @@ body {
 .AboutMe {
   padding: 30px 30px;
   margin-left: 220px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .ContactMe {
   padding: 30px 30px;
   margin-left: 220px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .MyGithub {
@@ -39,7 +45,48 @@ body {
 .MyLinkedIn {
   padding: 30px 30px;
   margin-left: 220px;
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+.intro {
+  color: white;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.Introduction {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.academics_header {
+  color: white;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.Academics {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.myEmail {
+  padding: 30px 30px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.myIG {
+  padding: 30px 30px;
+  margin-left: 150px;
+  margin-top: 20px;
 }
 
 /* unvisited link */
@@ -56,6 +103,8 @@ a:visited {
 /* visited link */
 
 /* mouse over link */
-a:hover.a:active {
+a:hover,
+a:active {
+  background-color: grey;
   color: white;
 }
