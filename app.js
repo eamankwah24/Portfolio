@@ -23,6 +23,11 @@ app.get('/contact.html',(req,res)=>{
 
 })
 
+app.get('/IMG_E1067.JPG',(req,res)=>{
+  res.status(200).sendFile(path.resolve(__dirname,'./IMG_E1067.JPG'))
+
+})
+
 
 //handle 404
 app.all('*',(req,res)=>{
