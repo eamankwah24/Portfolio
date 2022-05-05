@@ -70,6 +70,14 @@ body {
   text-decoration: underline;
 }
 
+.skills {
+  color: white;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
 .Academics {
   color: white;
   font-family: "Times New Roman", Times, serif;
