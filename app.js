@@ -13,10 +13,6 @@ app.get('/',(req,res)=>{
 
 })
 
-app.get('/index.html',(req,res)=>{
-  res.status(200).sendFile(path.resolve(__dirname,'./index.html'))
-
-})
 
 app.get('/contact.html',(req,res)=>{
   res.status(200).sendFile(path.resolve(__dirname,'./contact.html'))
